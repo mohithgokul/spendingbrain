@@ -1,6 +1,7 @@
 import streamlit as st
 from components.dashboard import show_dashboard
 from components.upload import show_upload
+from components.analysis_view import show_analysis
 
 st.set_page_config(page_title="Spending Brain", layout="wide")
 
@@ -28,7 +29,7 @@ elif menu == "Dashboard":
     show_dashboard()
 
 elif menu == "Analysis":
-    st.write("Analysis coming soon...")
+    show_analysis()
 
 elif menu == "AI Insights":
     st.write("AI insights coming soon...")
