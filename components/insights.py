@@ -1,0 +1,11 @@
+import streamlit as st
+from utils.ai_insights import generate_insights
+    # 🤖 AI Insights
+def ai_insights():
+    st.subheader("🤖 AI Financial Advice")
+    df = st.session_state.df
+
+    if st.button("Generate AI Insights"):
+        with st.spinner("Analyzing your spending..."):
+            insights = generate_insights(df)
+            st.write(insights)

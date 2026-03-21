@@ -26,14 +26,6 @@ def show_analysis():
     else:
         st.success("✅ No major issues detected")
 
-    # 🤖 AI Insights
-    st.subheader("🤖 AI Financial Advice")
-
-    if st.button("Generate AI Insights"):
-        with st.spinner("Analyzing your spending..."):
-            insights = generate_insights(df)
-            st.write(insights)
-            
     # 💡 Money Leak Detection
     st.subheader("🕳️ Money Leak Detection")
 
