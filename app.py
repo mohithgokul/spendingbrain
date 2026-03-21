@@ -3,6 +3,7 @@ from components.dashboard import show_dashboard
 from components.upload import show_upload
 from components.analysis_view import show_analysis
 from components.insights import ai_insights
+from components.goals import show_goals
 st.set_page_config(page_title="Spending Brain", layout="wide")
 
 st.title("🧠 Spending Brain")
@@ -35,4 +36,4 @@ elif menu == "AI Insights":
     ai_insights()
 
 elif menu == "Goals":
-    st.write("Goals coming soon...")
+    show_goals()
