@@ -47,6 +47,7 @@ Upload your transaction data → get instant dashboards → understand your spen
 - **Version Control:** Git & GitHub  
 
 ---
+## 📂 Project Structure
 
 spendingbrain/
 
@@ -107,4 +108,4 @@ streamlit run app.py
 
 👉 https://spendingbrain.streamlit.app
 
-## 📂 Project Structure
+
