@@ -6,6 +6,6 @@ def ai_insights():
     df = st.session_state.df
 
     if st.button("Generate AI Insights"):
-        with st.spinner("Analyzing your spending..."):
+        with st.spinner("⚡ Generating insights (few seconds)..."):
             insights = generate_insights(df)
             st.write(insights)
