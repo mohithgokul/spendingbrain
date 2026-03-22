@@ -24,8 +24,8 @@ Give short:
 - One warning
 - One saving tip
 """
-
-    response = model.generate_content(prompt)
-
-    return response.text
-
+    try:
+     response = model.generate_content(prompt)
+     return response.text
+    except Exception as e:
+     return "⚠️ AI is taking too long. Please try again."
