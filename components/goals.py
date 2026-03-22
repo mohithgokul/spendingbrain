@@ -29,6 +29,6 @@ def show_goals():
         # 🚨 Compare
         if monthly_spend > monthly_required:
             st.error("⚠️ You are spending too much to reach your goal!")
-            st.write(f"Reduce spending by ₹{monthly_spend - monthly_required:.0f}")
+            st.write(f"Reduce spending to ₹{monthly_spend - monthly_required:.0f}")
         else:
             st.success("✅ You are on track to reach your goal!")
