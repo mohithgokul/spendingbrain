@@ -9,3 +9,6 @@ def ai_insights():
         with st.spinner("⚡ Generating insights (few seconds)..."):
             insights = generate_insights(df)
             st.write(insights)
+    if df is None:
+     st.warning("⚠️ Please upload data first")
+    return

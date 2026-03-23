@@ -32,3 +32,6 @@ def show_goals():
             st.write(f"Reduce spending to ₹{monthly_spend - monthly_required:.0f}")
         else:
             st.success("✅ You are on track to reach your goal!")
+    if df is None:
+        st.warning("⚠️ Please upload data first")
+    return

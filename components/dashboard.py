@@ -38,3 +38,6 @@ def show_dashboard():
     with col2:
         st.subheader("Spending by Category")
         st.bar_chart(category_sum)
+    if df is None:
+     st.warning("⚠️ Please upload data first")
+    return

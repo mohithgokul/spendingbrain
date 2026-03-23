@@ -16,4 +16,6 @@ def show_upload():
 
         st.success("✅ Data uploaded successfully!")
         st.dataframe(df)
+    if st.session_state.df is None:
+        st.info("👆 Please upload a file to get started")
         
